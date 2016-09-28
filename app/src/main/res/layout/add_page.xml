@@ -9,16 +9,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#b6affe">
 
-    <EditText android:id="@+id/edit_message"
+    <EditText android:id="@+id/AddPage_edit_message"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Title"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/done_button"
+        android:layout_toStartOf="@+id/AddPage_done_button"
         android:layout_alignParentTop="true"
-        android:layout_alignBottom="@+id/done_button"
-        android:textSize="25dp"
+        android:layout_alignBottom="@+id/AddPage_done_button"
+        android:textSize="30dp"
         android:textColor="#000000"
         android:background="#ffffff"
         android:paddingLeft="10dp"
@@ -26,9 +26,9 @@
 
     <Button
         android:layout_width="80dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="Done"
-        android:id="@+id/done_button"
+        android:id="@+id/AddPage_done_button"
         android:layout_alignParentEnd="true"
         android:textSize="20dp"
         android:background="#303F9F"
@@ -37,20 +37,24 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/habit_description"
-        android:layout_below="@+id/edit_message"
+        android:id="@+id/AddPage_habit_description"
+        android:layout_below="@+id/AddPage_edit_message"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:background="#ffffff"
         android:layout_marginTop="15dp"
-        android:layout_above="@+id/repeat_button"
-        android:layout_marginBottom="15dp" />
+        android:layout_above="@+id/AddPage_repeat_button"
+        android:layout_marginBottom="15dp"
+        android:text="Description "
+        android:gravity="top|left"
+        android:padding="15dp"
+        android:textSize="20dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="Repeat"
-        android:id="@+id/repeat_button"
+        android:id="@+id/AddPage_repeat_button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"

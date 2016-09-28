@@ -4,202 +4,182 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:paddingBottom="@dimen/activity_vertical_margin"
-
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#b6affe">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="280dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/background_box"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:paddingTop="1dp"
-        android:id="@+id/relativeLayout">
-
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Sunday"
-            android:id="@+id/sunday"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:background="@drawable/text_box"
-            android:gravity="left|center"
-            android:paddingLeft="5dp" />
-
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Monday"
-            android:id="@+id/monday"
-            android:layout_below="@+id/sunday"
-            android:layout_alignParentStart="true"
-            android:singleLine="false"
-            android:layout_alignParentEnd="true"
-            android:background="@drawable/text_box"
-            android:gravity="left|center"
-            android:paddingLeft="5dp" />
-
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Tuesday"
-            android:id="@+id/tuesday"
-            android:singleLine="false"
-            android:layout_below="@+id/monday"
-            android:layout_alignParentStart="true"
-            android:layout_alignEnd="@+id/monday"
-            android:background="@drawable/text_box"
-            android:gravity="left|center"
-            android:paddingLeft="5dp"/>
-
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Wednesday"
-            android:id="@+id/wednesday"
-            android:singleLine="false"
-            android:layout_below="@+id/tuesday"
-            android:layout_alignParentStart="true"
-            android:layout_alignEnd="@+id/monday"
-            android:background="@drawable/text_box"
-            android:gravity="left|center"
-            android:paddingLeft="5dp"/>
-
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Thursday"
-            android:id="@+id/thursday"
-            android:singleLine="false"
-            android:layout_below="@+id/wednesday"
-            android:layout_alignParentStart="true"
-            android:layout_alignEnd="@+id/monday"
-            android:background="@drawable/text_box"
-            android:gravity="left|center"
-            android:paddingLeft="5dp"/>
-
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Saturday"
-            android:id="@+id/saturday"
-            android:singleLine="false"
-            android:layout_below="@+id/friday"
-            android:layout_alignParentStart="true"
-            android:layout_alignEnd="@+id/monday"
-            android:background="@drawable/text_box"
-            android:gravity="left|center"
-            android:paddingLeft="5dp"/>
-
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Friday"
-            android:id="@+id/friday"
-            android:singleLine="false"
-            android:layout_below="@+id/thursday"
-            android:layout_alignParentStart="true"
-            android:layout_alignEnd="@+id/monday"
-            android:background="@drawable/text_box"
-            android:gravity="left|center"
-            android:paddingLeft="5dp"/>
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/sunday_checkbox"
-            android:layout_above="@+id/monday"
-            android:layout_alignEnd="@+id/sunday"
-            android:layout_alignParentTop="true"
-            android:layout_marginRight="15dp" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/monday_checkbox"
-            android:layout_marginRight="15dp"
-            android:layout_below="@+id/sunday"
-            android:layout_alignParentEnd="true"
-            android:checked="false" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/tuesday_checbox"
-            android:layout_marginRight="15dp"
-            android:checked="false"
-            android:layout_below="@+id/monday"
-            android:layout_alignParentEnd="true" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/wednesday_checkbox"
-            android:layout_marginRight="15dp"
-            android:checked="false"
-            android:layout_below="@+id/tuesday"
-            android:layout_alignParentEnd="true" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/thursday_checkbox"
-            android:layout_marginRight="15dp"
-            android:checked="false"
-            android:layout_below="@+id/wednesday"
-            android:layout_alignEnd="@+id/wednesday" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/friday_checkbox"
-            android:layout_marginRight="15dp"
-            android:checked="false"
-            android:layout_below="@+id/thursday"
-            android:layout_alignParentEnd="true" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/saturday_checkbox"
-            android:layout_marginRight="15dp"
-            android:checked="false"
-            android:layout_below="@+id/friday"
-            android:layout_alignEnd="@+id/saturday" />
-
-    </RelativeLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="Done"
-        android:id="@+id/back_button"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:id="@+id/RepeatPage_done_button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:textSize="25dp"
         android:textColor="#ffffff"
         android:background="#303F9F" />
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sunday"
+        android:id="@+id/RepeatPage_sunday"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/text_box"
+        android:gravity="left|center"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Monday"
+        android:id="@+id/RepeatPage_monday"
+        android:layout_below="@+id/RepeatPage_sunday"
+        android:layout_alignParentStart="true"
+        android:singleLine="false"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/text_box"
+        android:gravity="left|center"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tuesday"
+        android:id="@+id/RepeatPage_tuesday"
+        android:singleLine="false"
+        android:layout_below="@+id/RepeatPage_monday"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/RepeatPage_monday"
+        android:background="@drawable/text_box"
+        android:gravity="left|center"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Wednesday"
+        android:id="@+id/RepeatPage_wednesday"
+        android:singleLine="false"
+        android:layout_below="@+id/RepeatPage_tuesday"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/RepeatPage_monday"
+        android:background="@drawable/text_box"
+        android:gravity="left|center"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Thursday"
+        android:id="@+id/RepeatPage_thursday"
+        android:singleLine="false"
+        android:layout_below="@+id/RepeatPage_wednesday"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/RepeatPage_monday"
+        android:background="@drawable/text_box"
+        android:gravity="left|center"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Saturday"
+        android:id="@+id/RepeatPage_saturday"
+        android:singleLine="false"
+        android:layout_below="@+id/RepeatPage_friday"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/RepeatPage_monday"
+        android:background="@drawable/text_box"
+        android:gravity="left|center"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Friday"
+        android:id="@+id/RepeatPage_friday"
+        android:singleLine="false"
+        android:layout_below="@+id/RepeatPage_thursday"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/RepeatPage_monday"
+        android:background="@drawable/text_box"
+        android:gravity="left|center"
+        android:paddingLeft="5dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/RepeatPage_sunday_checkbox"
+        android:layout_above="@+id/RepeatPage_monday"
+        android:layout_alignEnd="@+id/RepeatPage_sunday"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="0dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/RepeatPage_monday_checkbox"
+        android:layout_below="@+id/RepeatPage_sunday"
+        android:layout_alignParentEnd="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/RepeatPage_tuesday_checkbox"
+        android:checked="false"
+        android:layout_below="@+id/RepeatPage_monday"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/RepeatPage_wednesday_checkbox"
+        android:checked="false"
+        android:layout_below="@+id/RepeatPage_tuesday"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/RepeatPage_thursday_checkbox"
+        android:checked="false"
+        android:layout_below="@+id/RepeatPage_wednesday"
+        android:layout_alignEnd="@+id/RepeatPage_wednesday" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/RepeatPage_friday_checkbox"
+        android:checked="false"
+        android:layout_below="@+id/RepeatPage_thursday"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/RepeatPage_saturday_checkbox"
+        android:checked="false"
+        android:layout_below="@+id/RepeatPage_friday"
+        android:layout_alignEnd="@+id/RepeatPage_saturday" />
 
 </RelativeLayout>

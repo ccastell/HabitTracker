@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="Add"
-        android:id="@+id/repeat_button"
+        android:id="@+id/Main_add_button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
@@ -25,11 +25,11 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/habit_list"
+        android:id="@+id/Main_habit_list"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/repeat_button"
-        android:layout_marginBottom="15dp"
         android:headerDividersEnabled="false"
         android:background="#ffffff"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/Main_add_button"
+        android:layout_marginBottom="15dp" />
 </RelativeLayout>

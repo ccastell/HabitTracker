@@ -9,52 +9,54 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#b6affe">
 
-    <EditText android:id="@+id/edit_message"
+    <TextView
+        android:id="@+id/OpenHabit_edit_message"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Title"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/done_button"
+        android:layout_toStartOf="@+id/OpenHabit_done_button"
         android:layout_alignParentTop="true"
-        android:layout_alignBottom="@+id/done_button"
-        android:textSize="25dp"
+        android:layout_alignBottom="@+id/OpenHabit_done_button"
+        android:textSize="30dp"
         android:textColor="#000000"
         android:background="#ffffff"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp" />
+        android:paddingRight="10dp"
+        android:gravity="left|center" />
 
     <Button
         android:layout_width="80dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="Done"
-        android:id="@+id/done_button"
+        android:id="@+id/OpenHabit_done_button"
         android:layout_alignParentEnd="true"
         android:textSize="20dp"
         android:background="#303F9F"
         android:textColor="#ffffff" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/habit_description"
+        android:id="@+id/OpenHabit_habit_description"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:background="#ffffff"
-        android:layout_below="@+id/mark_complete_button"
+        android:layout_below="@+id/OpenHabit_mark_complete_button"
         android:layout_marginTop="15dp"
-        android:layout_above="@+id/bottom_frame"
-        android:layout_marginBottom="10dp" />
+        android:layout_above="@+id/OpenHabit_bottom_frame"
+        android:layout_marginBottom="15dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="Complete"
-        android:id="@+id/mark_complete_button"
+        android:id="@+id/OpenHabit_mark_complete_button"
         android:textSize="25dp"
         android:background="#303F9F"
         android:textColor="#ffffff"
-        android:layout_below="@+id/edit_message"
+        android:layout_below="@+id/OpenHabit_edit_message"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="15dp" />
@@ -64,7 +66,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/bottom_frame"
+        android:id="@+id/OpenHabit_bottom_frame"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:weightSum="1">
@@ -74,7 +76,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:text="History"
-            android:id="@+id/history_button"
+            android:id="@+id/OpenHabit_history_button"
             android:layout_weight="0.5"
             android:background="#3241a0"
             android:textColor="#ffffff"
@@ -84,7 +86,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:text="Delete"
-            android:id="@+id/delete_button"
+            android:id="@+id/OpenHabit_delete_button"
             android:layout_weight="0.5"
             android:textColor="#ffffff"
             android:background="#ff0303"
